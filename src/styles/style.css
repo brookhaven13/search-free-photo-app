@@ -34,15 +34,53 @@ button {
   flex-direction: column;
   min-height: 100vh;
 }
+.homepage-section .buttom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage-section .buttom button {
+  background: #fff;
+  border: 2px solid #a8a8a8;
+  border-radius: 10px;
+  color: #a8a8a8;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+}
+.homepage-section .buttom button:hover {
+  border: 2px solid #666;
+  color: #666;
+}
 
 .header-section {
   font-size: 14px;
   line-height: 16px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 1rem;
   width: 96%;
   padding: 0.5rem;
+}
+.header-section .left {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.header-section .left img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 2rem;
+}
+.header-section .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 .search-section {

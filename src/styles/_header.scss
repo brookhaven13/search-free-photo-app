@@ -2,8 +2,29 @@
   font-size: 14px;
   line-height: 16px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 1rem;
   width: 96%;
   padding: 0.5rem;
+
+  .left {
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    img {
+      object-fit: contain;
+      width: 2rem;
+    }
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 }

@@ -28,6 +28,9 @@ function Homepage() {
             return <Photo data={d} />;
           })}
       </div>
+      <div className="buttom">
+        <button>Load More</button>
+      </div>
     </div>
   );
 }
