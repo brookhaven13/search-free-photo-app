@@ -2,21 +2,26 @@ import React, { useState, useEffect } from "react";
 import "./../styles/style.css";
 import Search from "../components/Search";
 import Photo from "../components/Masonry";
-import { getCuratedPhotos } from "./../pexels";
+import { getCuratedPhotos, SearchPhotos } from "./../pexels";
 
 function Homepage() {
   const [input, setInput] = useState("");
   const [data, setData] = useState(null);
 
   // fetch curated photos from pexels api
-  const search = async () => {
+  const getHomepagePhotos = async () => {
     let fetchData = await getCuratedPhotos();
+    setData(fetchData.photos);
+  };
+
+  const search = async (input) => {
+    let fetchData = await SearchPhotos();
     setData(fetchData.photos);
   };
 
   // fetch photos fro pexels when page's loaded
   useEffect(() => {
-    search();
+    getHomepagePhotos();
   }, []);
 
   return (
