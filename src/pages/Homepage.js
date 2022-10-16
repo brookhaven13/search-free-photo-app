@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "./../styles/style.css";
 import Search from "../components/Search";
+import Photo from "../components/Masonry";
+import { getCuratedPhotos } from "./../pexels";
 
 function Homepage() {
-  const auth = "563492ad6f9170000100000125c21e996ae6487abb6d8e349a3f2684"; // pexels auth api key
+  const [input, setInput] = useState("");
+  const [data, setData] = useState(null);
+
+  // fetch curated photos from pexels api
+  const search = async () => {
+    let fetchData = await getCuratedPhotos();
+    setData(fetchData.photos);
+  };
+
+  // fetch photos fro pexels when page's loaded
+  useEffect(() => {
+    search();
+  }, []);
+
   return (
-    <div>
-      <h1>My Homepage</h1>
-      <Search />
+    <div className="homepage-section">
+      <Search search={search} />
+      <div className="masonry-blk">
+        {data &&
+          data.map((d) => {
+            return <Photo data={d} />;
+          })}
+      </div>
     </div>
   );
 }

@@ -4,12 +4,33 @@
   padding: 0;
 }
 
+body {
+  font-family: "Nunito", "Roboto", sans-serif;
+}
+
 a {
+  color: #fff;
   text-decoration: none;
+  a:visited {
+    color: #fff;
+  }
 }
 
-ul {
-  list-style-type: none;
+input {
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 500;
 }
 
+button {
+  cursor: pointer;
+  font-family: "Nunito";
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@import "./homepage";
 @import "./header";
+@import "./footer";
+@import "./search";
+@import "./masonry";

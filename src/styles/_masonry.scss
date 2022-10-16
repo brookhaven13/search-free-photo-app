@@ -1,0 +1,38 @@
+.masonry-blk {
+  columns: 5;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 1rem;
+}
+
+.image {
+  border-radius: 10px;
+  display: block;
+  width: 100%;
+}
+
+figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+  a {
+    background: rgb(37, 37, 37);
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0.4rem;
+  }
+  a:hover {
+    background: rgb(59, 59, 59);
+  }
+}
