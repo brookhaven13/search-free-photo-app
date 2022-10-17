@@ -1,5 +1,5 @@
 {
-  "homepage": "https://brookhaven13.github.io/search-free-photo-app/",
+  "homepage": "https://brookhaven13.github.io/search-free-photo-app",
   "name": "search-free-photo-app",
   "version": "0.1.0",
   "private": true,
@@ -16,9 +16,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build--prod": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
