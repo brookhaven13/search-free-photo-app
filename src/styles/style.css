@@ -142,6 +142,10 @@ button {
   width: 45%;
   padding: 0 1rem;
 }
+.search-input input:focus {
+  border: 2px solid #b9abd9;
+  outline: none;
+}
 .search-input button {
   background: rgb(37, 37, 37);
   border: none;
