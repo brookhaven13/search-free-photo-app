@@ -24,6 +24,7 @@ function Search({ search }) {
           />
           <button onClick={() => search(input)}>Search</button>
         </div>
+        <div style={{ fontSize: "16px" }}>Treding: city, mountain, animal</div>
       </div>
     </div>
   );
