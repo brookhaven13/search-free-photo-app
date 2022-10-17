@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/search-free-photo-app/static/css/main.51b17ea6.css",
+    "main.js": "/search-free-photo-app/static/js/main.4eb6224f.js",
+    "static/media/bg-img.jpg": "/search-free-photo-app/static/media/bg-img.782c7bcfc9339650fc08.jpg",
+    "index.html": "/search-free-photo-app/index.html",
+    "main.51b17ea6.css.map": "/search-free-photo-app/static/css/main.51b17ea6.css.map",
+    "main.4eb6224f.js.map": "/search-free-photo-app/static/js/main.4eb6224f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51b17ea6.css",
+    "static/js/main.4eb6224f.js"
+  ]
+}
