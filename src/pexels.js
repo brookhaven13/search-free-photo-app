@@ -17,8 +17,7 @@ export const getCuratedPhotos = async () => {
   return dataFetch.json();
 };
 
-export const SearchPhotos = async () => {
-  let input = "nature";
+export const SearchPhotos = async (input) => {
   const url = `${authEndpoint}/search?query=${input}&${condition}`;
   const dataFetch = await fetch(url, {
     method: "GET",

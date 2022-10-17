@@ -5,7 +5,6 @@ import Photo from "../components/Masonry";
 import { getCuratedPhotos, SearchPhotos } from "./../pexels";
 
 function Homepage() {
-  const [input, setInput] = useState("");
   const [data, setData] = useState(null);
 
   // fetch curated photos from pexels api
@@ -14,8 +13,12 @@ function Homepage() {
     setData(fetchData.photos);
   };
 
+  const callThisFromChild = (value) => {
+    console.log("value from child", value);
+  };
+
   const search = async (input) => {
-    let fetchData = await SearchPhotos();
+    let fetchData = await SearchPhotos(input);
     setData(fetchData.photos);
   };
 
