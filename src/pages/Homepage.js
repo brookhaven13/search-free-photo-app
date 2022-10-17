@@ -6,7 +6,6 @@ import { getCuratedPhotos, SearchPhotos, loadMorePhotos } from "./../pexels";
 
 function Homepage() {
   const [data, setData] = useState(null);
-  const [pageNum, setPageNum] = useState(1);
   const [pageUrl, setPageUrl] = useState("");
 
   // fetch curated photos from pexels api
