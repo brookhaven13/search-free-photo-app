@@ -8,11 +8,19 @@ function Header() {
     <div className="header-section">
       <div className="left">
         <img src={logo} alt="logo" />
-        Harley's Free Photo App
+        <Link to="/">Harley's Free Photo App</Link>
       </div>
       <div className="right">
         <Link to="/">Explore</Link>
-        <Link to="/about">About</Link>
+        {/* TO DO: Uncomment when about page is done */}
+        {/* <Link to="/about">About</Link> */}
+        <a
+          target="_blank"
+          href="https://github.com/brookhaven13"
+          rel="noreferrer"
+        >
+          About
+        </a>
       </div>
     </div>
   );
