@@ -2,6 +2,9 @@
 
 This project is a app to search free photos that using Pexels APIs to fetch their photo database.
 
+![image](https://user-images.githubusercontent.com/36215483/197402266-b0d2455a-1121-479a-a183-f538b5318c28.png)
+
+
 You may check their awesome website here: https://www.pexels.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
