@@ -8,7 +8,7 @@ const headers = {
 };
 
 export const getCuratedPhotos = async () => {
-  const condition = "page=1&per_page=5"; // Initial condition get 5 photos
+  const condition = "page=1&per_page=10"; // Initial condition get 5 photos
   const url = `${authEndpoint}/curated?${condition}`;
   const dataFetch = await fetch(url, {
     method: "GET",
@@ -18,7 +18,7 @@ export const getCuratedPhotos = async () => {
 };
 
 export const SearchPhotos = async (input) => {
-  const condition = "page=1&per_page=5"; // Initial condition get 5 photos
+  const condition = "page=1&per_page=10"; // Initial condition get 5 photos
   const url = `${authEndpoint}/search?query=${input}&${condition}`;
   const dataFetch = await fetch(url, {
     method: "GET",
