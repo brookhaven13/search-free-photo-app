@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+    .header-title {
+      overflow-y: hidden;
+    }
+
     img {
       object-fit: contain;
       width: 2rem;

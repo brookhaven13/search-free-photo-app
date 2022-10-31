@@ -8,7 +8,7 @@ function Header() {
     <div className="header-section">
       <div className="left">
         <img src={logo} alt="logo" />
-        <Link to="/">Harley's Free Photo App</Link>
+        <span className="header-title">Harley's Free Photo App</span>
       </div>
       <div className="right">
         <Link to="/">Explore</Link>

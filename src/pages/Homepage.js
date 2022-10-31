@@ -13,7 +13,6 @@ function Homepage() {
     let fetchData = await getCuratedPhotos();
     setData(fetchData.photos);
     setPageUrl(fetchData.next_page);
-    console.log(fetchData);
   };
 
   const search = async (input) => {

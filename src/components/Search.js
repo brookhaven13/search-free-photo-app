@@ -21,6 +21,9 @@ function Search({ search }) {
             type="text"
             placeholder="Search for free photos"
             onChange={inputChangeHandler}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") search(input);
+            }}
           />
           <button onClick={() => search(input)}>Search</button>
         </div>
