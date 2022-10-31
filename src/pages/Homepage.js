@@ -40,7 +40,7 @@ function Homepage() {
         <Masonry columns={4} spacing={2}>
           {data &&
             data.map((d) => {
-              return <Photo data={d} />;
+              return <Photo data={d} key={d.id} />;
             })}
         </Masonry>
       </div>

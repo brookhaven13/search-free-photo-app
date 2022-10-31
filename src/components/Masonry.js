@@ -9,9 +9,9 @@ function Photo({ data, gap }) {
         </a>
         <figcaption>
           <span>{data.photographer}</span>
-          <a href={data.src.large} download target="_blank" rel="noreferrer">
+          {/* <a href={data.src.large} download target="_blank" rel="noreferrer">
             Download
-          </a>
+          </a> */}
         </figcaption>
       </figure>
     </div>
